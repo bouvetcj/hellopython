@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="{{ time_of_day }}">
+    <div class="container">
+        <h1>{{ greeting }}</h1>
+        <p>Server Info:</p>
+        <ul>
+            <li><strong>Hostname:</strong> {{ stats.hostname }}</li>
+            <li><strong>Python Version:</strong> {{ stats.python_version }}</li>
+            <li><strong>App Start Time:</strong> {{ stats.app_start_time }}</li>
+        </ul>
+    </div>
+</body>
+</html>

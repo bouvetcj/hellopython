@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: background 1s ease-in-out;
+}
+
+/* Morning: Soft sunrise */
+.morning {
+    background: linear-gradient(to bottom, #FFD700, #FF8C00);
+}
+
+/* Afternoon: Clear blue sky */
+.afternoon {
+    background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+}
+
+/* Evening: Sunset vibes */
+.evening {
+    background: linear-gradient(to bottom, #FF4500, #8B0000);
+}
+
+/* Night: Deep blue night sky */
+.night {
+    background: linear-gradient(to bottom, #191970, #000000);
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+li {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
